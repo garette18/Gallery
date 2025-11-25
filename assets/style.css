@@ -13,20 +13,16 @@
         }
         .navbar {
             background-color: #fcfcfc;
-            /* Off-white for Navbar background */
             border-bottom: 2px solid #795548;
-            /* Light Brown Divider */
         }
 
         .navbar-brand span {
-            /* Large, light brown logo text */
             font-family: 'Poppins', sans-serif;
             font-size: 2rem;
             color: #795548;
         }
 
         .nav-menu .nav-link {
-            /* Light brown links */
             color: #795548 !important;
             font-weight: 600;
             padding: 0.5rem 0.75rem;
@@ -35,13 +31,10 @@
 
         .nav-menu .nav-link:hover,
         .nav-menu .nav-link.active {
-            /* Subtle change on hover/active */
             color: #b39d89 !important;
-            /* Slightly lighter brown */
             border-bottom: 2px solid #b39d89;
         }
 
-        /* Main Content Header */
         .main-header {
             color: #4e342e;
             font-family: 'Poppins', sans-serif;
@@ -50,7 +43,6 @@
             margin-bottom: 1rem;
         }
 
-        /* --- ✨ CARD STYLING & EFFECTS --- */
         .food-card {
             border-radius: 12px;
             overflow: hidden;
@@ -69,7 +61,6 @@
             object-fit: cover;
         }
 
-        /* --- 🔴 MINIMAL RED ACCENT --- */
         .btn-outline-red {
             color: #dc3545;
             border-color: #dc3545;
