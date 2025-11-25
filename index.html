@@ -4,85 +4,102 @@
 <head>
     <title>Japanese Food Gallery</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@300;400;500&display=swap"
-        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/style.css" />
-
 </head>
 
 <body>
     <div class="container-fluid p-0">
-            <div class="col-12">
-                <nav class="navbar navbar-expand-lg p-4">
-                <div class="container flex-lg-column align-items-lg-center">
-                        <a class="navbar-brand d-flex align-items-center justify-content-start justify-content-lg-center mb-lg-3"
-                            href="#">
-                            <span class="fw-bold">JAPANESE</span>
-                        </a>
-                        <d  iv class="navbar-collapse justify-content-center" id="navbarNavDropdown">
-                            <ul class="navbar-nav gap-4 text-uppercase nav-menu">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Gallery</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">About Us</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
+        <nav class="navbar navbar-expand-lg p-4 sticky-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-4" href="#home">
+                    <i class="fas fa-utensils"></i> JAPANESE FOOD GALLERY
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <div class="container mb-5">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h1 class="main-header">
-                        AUTHENTIC JAPANESE DELIGHTS
-                    </h1>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav gap-4 text-uppercase">
+                        <li class="nav-item"><a class="nav-link text-dark-brown" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark-brown" href="#categories">Categories</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark-brown" href="#about">About Us</a></li>
+                    </ul>
                 </div>
-                <div id="content" class="row g-4">
+            </div>
+        </nav>
+    </div>
+
+    <div id="categories" class="py-5 bg-white">
+        <div class="container">
+            <div class="row mb-5 text-center">
+                <div class="col-12">
+                    <h1 class="text-dark-brown mb-3"><strong>Japanese Food</strong></h1>
+                    <p class="lead text-dark-brown">A taste journey through Japan's culinary landscape. Click to view
+                        dishes.</p>
                 </div>
+            </div>
+            <div class="row g-4 justify-content-center" id="categoryContent">
             </div>
         </div>
     </div>
+    <div id="about" class="container my-5 bg-dark-brown p-5 rounded shadow-lg">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <h2 class="text-white mb-3">ABOUT JAPANESE FOOD GALLERY</h2>
+                <p class="lead text-light-brown">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum consequuntur similique cum at. Sint
+                    enim tempora quaerat repellat nemo placeat quis delectus cumque minus impedit dolorum quibusdam, in
+                    eum quisquam!.
+                </p>
+                <p class="text-light-brown">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus vero officia deserunt nisi unde
+                    quasi illo. Ad distinctio nemo nihil perferendis porro reprehenderit sint earum dolor, harum,
+                    explicabo quia quasi?
+                </p>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img src="https://source.unsplash.com/800x600/?japanese,restaurant,interior"
+                    class="img-fluid rounded shadow-lg" alt="Japanese Restaurant Interior">
+            </div>
+        </div>
+    </div>
+
     <script>
-        const foodData = [
-            { name: "Sushi", desc: "Fresh fish slices (neta) over vinegared rice.", image: "https://source.unsplash.com/600x400/?sushi,nigiri" },
-            { name: "Sashimi", desc: "Thinly sliced raw fish or seafood, served without rice.", image: "https://source.unsplash.com/600x400/?sashimi,japan" },
-            { name: "Tempura", desc: "Lightly battered and deep-fried seafood and vegetables.", image: "https://source.unsplash.com/600x400/?tempura,shrimp" },
-            { name: "Tonkatsu", desc: "Deep-fried pork cutlet served with thick sauce.", image: "https://source.unsplash.com/600x400/?tonkatsu,pork" },
+        const categoriesData = [
+            { name: "SUSHI", desc: "The art of vinegared rice and fresh seafood.", image: "assets/images/sushi.jpg", file: "sushi" },
+            { name: "RAMEN & NOODLES", desc: "Savory broth, springy noodles, and rich toppings.", image: "assets/images/ramen.jpg", file: "ramen" },
+            { name: "TEMPURA & FRIED", desc: "Lightly battered and perfectly deep-fried delights.", image: "assets/images/tempura.jpg", file: "tempura" },
+            { name: "DESSERTS & SWEETS", desc: "Ending the meal with traditional Japanese sweets.", image: "assets/images/dessert.jpg", file: "dessert" },
+            { name: "DONBURI", desc: "A bowl of rice topped with various ingredients.", image: "assets/images/donburi.jpg", file: "donburi" },
+            { name: "STREET FOOD", desc: "Popular Japanese street snacks and quick bites.", image: "assets/images/street_food.jpg", file: "street_food" },
         ];
 
-        var content = document.getElementById("content");
-        for (i = 0; i < foodData.length; i++) {
-            content.innerHTML += `
-                <div class="col-12 col-sm-6 col-lg-3"> 
-                    <div class="card food-card shadow-sm border-0">
-                        <img src="${foodData[i].image}" class="card-img-top"${foodData[i].name}">
-                        <div class="card-body d-flex flex-column"> 
-                            <h5 class="card-title">` + foodData[i].name + `</h5>
-                            <p class="card-text text-muted">` + foodData[i].desc + `</p>
-                            <a href="#" class="btn btn-sm btn-outline-red mt-auto">View Details</a> 
+        var categoryContent = document.getElementById("categoryContent");
+        for (let i = 0; i < categoriesData.length; i++) {
+            categoryContent.innerHTML += `
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="categories.html?type=${categoriesData[i].file}" class="text-decoration-none">
+                        <div class="card category-card text-center h-100 shadow-lg border-0 bg-white">
+                            <img src="${categoriesData[i].image}" class="card-img-top" alt="${categoriesData[i].name} Category">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title text-dark-brown fw-bold">${categoriesData[i].name}</h5>
+                                <p class="card-text text-muted">${categoriesData[i].desc}</p>
+                                <span class="btn btn-outline-red-wine mt-auto">View Dishes</span>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            `;
+                    </a>
+                </div>`;
         }
     </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
