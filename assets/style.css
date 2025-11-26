@@ -34,7 +34,6 @@ h1, h2, h3, h4 {
     transform: scale(1.05);
 }
 
-/* ABOUT SECTION */
 .text-light-brown {
     color: var(--light-brown) !important;
 }
