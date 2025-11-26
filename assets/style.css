@@ -1,16 +1,12 @@
 :root {
     --light-brown: #d2b48c;
     --dark-brown: #5c4033;
-    --red-wine: #800000;
 }
-h1, h2, h3, h4 {
+p, h1, h2, h3, h4,h5 {
     font-family: "Poppins", sans-serif;
     color: var(--dark-brown);
 }
-.main-navbar {
-    background: #fff;
-    border-bottom: 2px solid var(--light-brown);
-}
+
 .navbar-brand {
     color: var(--dark-brown) !important;
 }
@@ -33,7 +29,13 @@ h1, h2, h3, h4 {
 .card:hover .card-img-top {
     transform: scale(1.05);
 }
+.banner {
+    height: 600px;
+    overflow: hidden;
+}
 
-.text-light-brown {
-    color: var(--light-brown) !important;
+.banner-img {
+    height: 200%;
+    object-fit: cover;
+    filter: brightness(60%);
 }

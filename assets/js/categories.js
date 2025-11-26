@@ -25,7 +25,7 @@ var categories = [
                 "image": "assets/images/sushi/salmon_maki.jpg"
             },
             {
-                "name": "Sashimi (Assorted)",
+                "name": "Sashimi",
                 "desc": "Thinly sliced fresh raw seafood, served without rice.",
                 "image": "assets/images/sushi/sashimi.jpg"
             },
@@ -90,7 +90,7 @@ var categories = [
                 "image": "assets/images/tempura/ebi_tempura.jpg"
             },
             {
-                "name": "KOROKKE (Croquette)",
+                "name": "KOROKKE",
                 "desc": "Deep-fried panko-crusted mashed potato mixed with meat or vegetables.",
                 "image": "assets/images/tempura/korokke.jpg"
             },
