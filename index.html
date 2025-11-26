@@ -9,8 +9,8 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/style.css" />
 </head>
-<body>
-    <div class="container-fluid p-0 sticky-top bg-white bg-opacity-75">
+<body id="body" data-bs-theme="light">
+    <div class="container-fluid p-0 sticky-top bg-body-tertiary bg-opacity-75">
         <nav class="navbar navbar-expand-lg p-4 sticky-top shadow-sm">
             <div class="container">
                 <a class="navbar-brand fw-bold fs-4" href="#">
@@ -42,6 +42,7 @@
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link text-dark-brown fw-bold" href="#about">About Us</a></li>
+                        <li class="nav-item"><a id="themeToggle" onclick="themeToggle()" class="nav-link text-dark-brown fw-bold" href="#">🟡</a></li>
                     </ul>
                 </div>
             </div>
@@ -54,8 +55,7 @@
             <p class="lead text-light">A visual journey through Japanese cuisine.</p>
         </div>
     </div>
-
-    <div class="py-5 bg-white">
+    <div class="py-5 bg-body-tertiary bg-opacity-75">
         <div class="container">
             <div id="content"></div>
         </div>
@@ -77,22 +77,20 @@
             </div>
         </div>
     </div>
-    <footer class="bg-light mt-5 border-top">
-        <div class="container py-4">
-            <div class="row">
-                <div class="col-md-8 mb-3 mb-md-0">
-                    <h5 class="fw-bold text-dark-brown">
-                        日本料理 GALLERY
-                    </h5>
-                    <p class="text-dark-brown" style="font-size: 1rem;">
-                        A visual journey through Japanese cuisine.
-                </div>
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-md-8 mb-3 mb-md-0">
+                <h5 class="fw-bold text-dark-brown">
+                    日本料理 GALLERY
+                </h5>
+                <p class="text-dark-brown" style="font-size: 1rem;">
+                    A visual journey through Japanese cuisine.
             </div>
         </div>
-        <div class="text-center p-3 text-white" style="background-color: rgb(99, 32, 32); font-size: 1rem;">
-            Japanese Food Gallery.
-        </div>
-    </footer>
+    </div>
+    <div class="text-center p-3 text-white" style="background-color: rgb(99, 32, 32); font-size: 1rem;">
+        Japanese Food Gallery.
+    </div>
 
     <script src="assets/js/categories.js"></script>
     <script src="assets/js/script.js"></script>
