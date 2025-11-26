@@ -9,9 +9,8 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/style.css" />
 </head>
-
 <body>
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0 sticky-top bg-white bg-opacity-75">
         <nav class="navbar navbar-expand-lg p-4 sticky-top shadow-sm">
             <div class="container">
                 <a class="navbar-brand fw-bold fs-4" href="#">
@@ -24,26 +23,41 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav gap-4 text-uppercase">
-                        <li class="nav-item"><a class="nav-link text-dark-brown" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link text-dark-brown" href="#categories">Categories</a></li>
-                        <li class="nav-item"><a class="nav-link text-dark-brown" href="#about">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark-brown fw-bold" href="#">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fw-bold" href="#" id="galleryDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
+                                <li><a class="dropdown-item" href="#SUSHI (寿司)">SUSHI (寿司)</a></li>
+                                <li><a class="dropdown-item" href="#RAMEN & NOODLES (ラーメン)">RAMEN & NOODLES (ラーメン)</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#TEMPURA & FRIED (天ぷら)">TEMPURA & FRIED (天ぷら)</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#DESSERTS & SWEETS (デザート)">DESSERTS & SWEETS
+                                        (デザート)</a></li>
+                                <li><a class="dropdown-item" href="#DONBURI (丼)">DONBURI (丼)</a></li>
+                                <li><a class="dropdown-item" href="#STREET FOOD (屋台料理)">STREET FOOD (屋台料理)</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-dark-brown fw-bold" href="#about">About Us</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
-    <div id="categories" class="py-5 bg-white">
+    <div class="banner position-relative d-flex align-items-center">
+        <img src="assets/images/stall.jpeg" class="w-100 banner-img" alt="Japanese Food Banner">
+        <div class="container position-absolute top-50 start-50 translate-middle text-center">
+            <h1 class="fw-bold text-light">JAPANESE FOOD</h1>
+            <p class="lead text-light">A visual journey through Japanese cuisine.</p>
+        </div>
+    </div>
+
+    <div class="py-5 bg-white">
         <div class="container">
-            <div class="row mb-5 text-center">
-                <div class="col-12">
-                    <h1 class="text-dark-brown mb-3"><strong>JAPANESE FOOD</strong></h1>
-                    <p class="lead text-dark-brown">
-                        A visual journey through Japan's culinary landscape.
-                    </p>
-                </div>
-            </div>
-            <div id="content">
-            </div>
+            <div id="content"></div>
         </div>
     </div>
 
@@ -63,6 +77,22 @@
             </div>
         </div>
     </div>
+    <footer class="bg-light mt-5 border-top">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-8 mb-3 mb-md-0">
+                    <h5 class="fw-bold text-dark-brown">
+                        日本料理 GALLERY
+                    </h5>
+                    <p class="text-dark-brown" style="font-size: 1rem;">
+                        A visual journey through Japanese cuisine.
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3 text-white" style="background-color: rgb(99, 32, 32); font-size: 1rem;">
+            Japanese Food Gallery.
+        </div>
+    </footer>
 
     <script src="assets/js/categories.js"></script>
     <script src="assets/js/script.js"></script>
@@ -71,5 +101,4 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
